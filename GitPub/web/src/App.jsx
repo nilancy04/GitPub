@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 // Cloud / Google Drive link for direct Android APK download
-const APK_DOWNLOAD_URL = import.meta.env.VITE_APK_DOWNLOAD_URL || 'https://drive.google.com';
+const APK_DOWNLOAD_URL = import.meta.env.VITE_APK_DOWNLOAD_URL || 'https://drive.google.com/file/d/17TlGVAZnkX3IZI_ai12Cfyxrg75DRslH/view?usp=sharing';
 
 export default function App() {
   // Navigation & Authentication State
