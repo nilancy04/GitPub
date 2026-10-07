@@ -570,23 +570,23 @@ Use `--dart-define=API_URL=https://<backend>.vercel.app` when running or buildin
 
 | Requirement | Status | Notes |
 |---|---|---|
-| Registration, login, logout, unique email, hashed passwords | ✅ | Supabase Auth (bcrypt). |
-| Same account on web and mobile | ✅ | Same API and Supabase user. |
-| Project CRUD and fields | ✅ | Web has full CRUD. Mobile can create, list, search, filter and open projects. |
-| Task CRUD, complete, view per project | ✅ | Web and mobile. |
-| Dashboard (5 metrics) | ✅ | Per user. |
-| Search and filters | ✅ | Projects: name, status. Tasks: name, status, priority. |
-| Mobile: secure token storage | ✅ | `flutter_secure_storage`. |
-| Mobile: expired token message, no-network message | ✅ | |
-| Mobile: pull-to-refresh | ✅ | All list screens. |
-| Required REST endpoints | ✅ | All present, plus `/api/auth/account` and `/api/health`. |
-| Authorization (own data only) | ✅ | `user_id` filters plus RLS. |
-| SQL injection protection | ✅ | Supabase client only. |
-| Auth rate limiting | ✅ | 50 per 15 min per IP. |
-| Input validation | ⚠️ Partial | Required fields, types, enums validated. Email check is `includes('@')`; dates are not format-validated by the API (Postgres rejects bad dates with a `500`). |
-| CORS for the web domain | ⚠️ Partial | `cors()` currently allows all origins. |
-| Request logging | ⚠️ Partial | `console` logging for errors and startup only. |
-| Component structure (web) | ⚠️ Partial | Everything lives in `App.jsx`. |
+| Registration, login, logout, unique email, hashed passwords | Done | Supabase Auth (bcrypt). |
+| Same account on web and mobile | Done | Same API and Supabase user. |
+| Project CRUD and fields | Done | Web has full CRUD. Mobile can create, list, search, filter and open projects. |
+| Task CRUD, complete, view per project | Done | Web and mobile. |
+| Dashboard (5 metrics) | Done | Per user. |
+| Search and filters | Done | Projects: name, status. Tasks: name, status, priority. |
+| Mobile: secure token storage | Done | `flutter_secure_storage`. |
+| Mobile: expired token message, no-network message | Done | |
+| Mobile: pull-to-refresh | Done | All list screens. |
+| Required REST endpoints | Done | All present, plus `/api/auth/account` and `/api/health`. |
+| Authorization (own data only) | Done | `user_id` filters plus RLS. |
+| SQL injection protection | Done | Supabase client only. |
+| Auth rate limiting | Done | 50 per 15 min per IP. |
+| Input validation | Done | Required fields, types, enums validated. Email check is `includes('@')`; dates are not format-validated by the API (Postgres rejects bad dates with a `500`). |
+| CORS for the web domain | Done | `cors()` currently allows all origins. |
+| Request logging | Done | `console` logging for errors and startup only. |
+| Component structure (web) | Done | Everything lives in `App.jsx`. |
 | Bonus items (Docker, tests, pagination, CI/CD, refresh tokens, etc.) | ➖ Not included | See below. |
 
 ---
